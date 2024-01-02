@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context=".MainActivity7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="22dp"
+        >
+
+        <ImageView
+            android:id="@+id/BackButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/white_border"
+
+            android:padding="10dp"
+            android:src="@drawable/white_back_arrow" />
+
+        <TextView
+
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="22sp"
+            android:lineHeight="19.36dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="About Us"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:lineHeight="19.36dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_light"
+            android:gravity="center"
+            android:text="All In One - Calculation Tool is a versatile app that simplifies complex calculations. It combines various calculators into a single, user-friendly interface, providing quick and accurate solutions for a wide range of mathematical and practical needs."
+            android:textColor="@color/white"
+
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:lineHeight="28dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <!-- First FrameLayout with equal weight -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/start_button_corner"
+            android:layout_gravity="center">
+
+            <!-- Common View for FrameLayouts -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:background="#1AFBFAFA"/>
+            <!-- TextView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share App"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </FrameLayout>
+
+        <!-- Second FrameLayout with equal weight -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/start_button_corner"
+            android:layout_gravity="center">
+
+            <!-- Common View for FrameLayouts -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:background="#1AFBFAFA"/>
+            <!-- TextView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate Us"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

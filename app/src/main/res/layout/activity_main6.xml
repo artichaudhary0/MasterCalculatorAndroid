@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_marginHorizontal="22dp"
+        >
+        <ImageView
+            android:id="@+id/backButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@drawable/rounder_border"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/inter_semibold"
+
+            android:textSize="22sp"
+            android:lineHeight="19.36sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="EMI Calculator"
+            android:textAlignment="center"
+            app:lineHeight="19.36dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:text="Loan Amount"
+            android:textSize="16dp"
+
+            android:fontFamily="@font/inter_semibold"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:layout_marginStart="40dp"
+            android:padding="10dp"
+            android:background="@drawable/rounder_border"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:text="Interest Rate(%)"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter_semibold"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/interest"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="Interest"
+            android:padding="10dp"
+
+            android:background="@drawable/rounder_border"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+
+        android:layout_gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:text="Time Period in"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_semibold"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="10"
+            android:padding="10dp"
+
+            android:background="@drawable/rounder_border"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Year"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_semibold"
+            android:textStyle="bold"
+            android:drawablePadding="40dp"
+            android:drawableEnd="@drawable/down_arrow"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculateEmiValue"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/mainColor"
+        android:fontFamily="@font/inter_medium"
+        android:text="Calculate"
+        android:paddingVertical="5dp"
+        android:elevation="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:cornerRadius="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Total Amount"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:lineHeight="19.36dp" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:fontFamily="@font/inter_medium"
+                android:text="---"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:lineHeight="19.36dp"
+
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Total Interest"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:lineHeight="19.36dp" />
+
+            <TextView
+                android:id="@+id/totalInterest"
+                android:fontFamily="@font/inter_medium"
+                android:text="---"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:lineHeight="19.36dp"
+
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="Total Payable Amount"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:lineHeight="19.36dp" />
+
+        <TextView
+            android:id="@+id/totalPayable"
+            android:fontFamily="@font/inter_medium"
+            android:text="---"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:lineHeight="19.36dp"
+
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

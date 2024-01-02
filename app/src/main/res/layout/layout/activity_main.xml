@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingTop="70dp"
+    android:paddingHorizontal="35dp"
+    android:orientation="vertical"
+    android:background="#1C3B5C">
+
+   <ImageView
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_gravity="center"
+       android:src="@drawable/logo" />
+
+   <!-- First FrameLayout -->
+   <FrameLayout
+       android:id="@+id/StartAppField"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="56dp"
+       android:background="@drawable/start_button_corner"
+       android:layout_gravity="center">
+
+      <!-- Common View for FrameLayouts -->
+      <View
+          android:layout_width="350dp"
+          android:layout_height="53dp"
+          android:background="#1AFBFAFA"/>
+
+      <!-- Common Layout for TextView, Button, and ImageView -->
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="center_vertical">
+
+         <!-- TextView -->
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="20dp"
+             android:text="Start App"
+             android:layout_marginTop="16dp"
+             android:textColor="@color/white"
+             android:textSize="16dp" />
+
+         <!-- Button -->
+         <Button
+             android:id="@+id/StartApp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="end"
+             android:background="#1AFBFAFA"
+             android:layout_marginStart="110dp"
+             android:text="Click Here"
+             android:textSize="12dp" />
+
+         <!-- ImageView -->
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/arrow"
+             android:layout_gravity="center_vertical|end"
+             android:layout_marginEnd="20dp"/>
+      </LinearLayout>
+   </FrameLayout>
+
+   <!-- Second FrameLayout -->
+   <FrameLayout
+       android:id="@+id/AboutUsField"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/start_button_corner"
+       android:layout_gravity="center">
+
+      <!-- Common View for FrameLayouts -->
+      <View
+          android:layout_width="340dp"
+          android:layout_height="53dp"
+          android:background="#1AFBFAFA"/>
+
+      <!-- Common Layout for TextView, Button, and ImageView -->
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="center_vertical">
+
+         <!-- TextView -->
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="20dp"
+             android:text="About Us"
+             android:layout_marginTop="16dp"
+             android:textColor="@color/white"
+             android:textSize="16sp" />
+
+         <!-- Button -->
+         <Button
+             android:id="@+id/AboutUsButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="end"
+             android:background="#1AFBFAFA"
+             android:layout_marginStart="110dp"
+             android:text="Know more"
+             android:textSize="12sp" />
+
+         <!-- ImageView -->
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/arrow"
+             android:layout_gravity="center_vertical|end"
+             android:layout_marginEnd="20dp"/>
+      </LinearLayout>
+   </FrameLayout>
+
+   <!-- Third LinearLayout with equal distribution -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:orientation="horizontal"
+       android:layout_gravity="center">
+
+      <!-- First FrameLayout with equal weight -->
+      <FrameLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginRight="25dp"
+          android:background="@drawable/start_button_corner"
+          android:layout_gravity="center">
+
+         <!-- Common View for FrameLayouts -->
+         <View
+             android:layout_width="wrap_content"
+             android:layout_height="53dp"
+             android:background="#1AFBFAFA"/>
+         <!-- TextView -->
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Share App"
+             android:gravity="center"
+             android:layout_marginTop="16dp"
+             android:textColor="@color/white"
+             android:textSize="16dp" />
+      </FrameLayout>
+
+      <!-- Second FrameLayout with equal weight -->
+      <FrameLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/start_button_corner"
+          android:layout_gravity="center">
+
+         <!-- Common View for FrameLayouts -->
+         <View
+             android:layout_width="wrap_content"
+             android:layout_height="53dp"
+             android:background="#1AFBFAFA"/>
+         <!-- TextView -->
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Rate Us"
+             android:gravity="center"
+             android:layout_marginTop="16dp"
+             android:textColor="@color/white"
+             android:textSize="16dp" />
+      </FrameLayout>
+   </LinearLayout>
+</LinearLayout>
