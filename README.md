@@ -1,4 +1,4 @@
-# Master Calculator App
+# Master Calculator App using Java
 
 The Master Calculator Android App is a versatile and user-friendly mobile application designed to provide
 a comprehensive set of essential calculators and tools to assist users with various financial, educational, and
